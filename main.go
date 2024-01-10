@@ -22,7 +22,14 @@ import (
 	//"golesson/goroutines"
 	//"time"
 	//"golesson/gochannels"
-	"golesson/interfaces"
+	//"golesson/interfaces"
+	//"golesson/defer_statment"
+	//"golesson/error_handling"
+	//"golesson/interfaces"
+	//"golesson/error_handling"
+	//"golesson/string_functions"
+	//"golesson/restful"
+	"golesson/project"
 ) //birden fazla import icin bu yapıyı kullanabiliyoruz
 
 func main() {
@@ -91,7 +98,23 @@ func main() {
 		//chanellın değerini okuyup ciftSayiCn'yi ciftSayiToplama aktarıyoruz
 		fmt.Println("Çarpım : ", carpim)
 	*/
-	interfaces.Demo1()
+	//interfaces.Demo2()
+	//--------------
+	//defer_statment.Demo3()
+	//--------
+	//error_handling.Demo1()
+	//--------
+	//fmt.Println(error_handling.TahminEt2(102))
+	//----
+	//string_functions.Demo2()
+	//-----
+	//restful.Demo2()
+	//-------
+	//project.AddProduct()
+	products, _ := project.GetAllProducts()
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].ProductName)
+	}
 
 }
 

@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+//interfaceler birer şablon olarak düşünebiliriz
 //interfaceler bize metod imzaları getirir
 //örneğin bir sürü alan hesaplma formülü var ama yöntemleri farklı
 //bu noktada bizde interface örneği yapacağız
@@ -39,7 +40,7 @@ func (c circle) area() float64 {
 func school(s shape) {
 	//s shape /*shape şablonuna uyan bir girdi ver demektir*/
 	//burada parametre olarak interface'i istiyoruz
-	fmt.Println(s.area())
+	fmt.Println("Şeklin alanı : ", s.area())
 
 }
 
@@ -54,3 +55,13 @@ func Demo1() {
 }
 
 //mesela dairenin fazladan bir metodu olabilir ama interface'in icinde bulunanlardan biri eksik olamaz
+//interfaceler programların sürdürülebilirliğiyle doğru orantılıdır
+
+//yukarıdaki structlara birer tane metod ekliyoruz bunlar area adında metodlar bunları icermesi gerektiğini düşündüğümüz için
+//go programlama dilinde interface'i uyguladığımız anlatmanın tek yolu metoduda aynı isimde vermektir
+//interface'imizin birden fazla metodu olabilir structlarımızın bunları icermesini bekliyoruz ancak structlarımızın her metodunu interface içermeyebilir
+
+//school fonksiyonunda shape interface'ini istiyoruz, pointerlarla otomatik çalışıyor burası
+
+//avantajı şudur sonradan bir şekil eklersek mevcut kodlara dokunmadan özelliklerini ekleriz
+//çok bicimliliği interfaceler ile yaparız, go gibi dillerde

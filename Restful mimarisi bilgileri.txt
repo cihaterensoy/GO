@@ -1,0 +1,13 @@
+Distributed -> dağınık sistemler
+
+facebooku düşünelim hem web hem de telefon uygulaması var
+bunlar eğer ayrı ayrı uygulamalar olsaydı özellik eklemek icin hepsine ayrı ayrı olarak işlem yapılırdı
+ancak artık backend yapısıyla buna gerek kalmıyor
+bir tane sistem yazmamız sonucunda hepsinin anlayacağı RESTFUL formatını oluşturuyoruz
+
+Restful api formatıyla istekler ve cevaplar anlaşılabiliyor
+
+
+get-post-put-delete gibi isteklerde bulunabiliyoruz
+
+get okumak icin kullanılır mesela bir sayfayı açtığımıza biz get isteği atıyoruz
